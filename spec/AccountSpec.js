@@ -2,7 +2,7 @@
 
 describe ('Account', function(){
 
-  var account;
+  let account;
 
   beforeEach(function() {
     account = new Account();
