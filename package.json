@@ -1,0 +1,27 @@
+{
+  "name": "bank-tt-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  },
+  "scripts": {
+    "lint": "eslint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kittaru87/bank-tech-test-JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kittaru87/bank-tech-test-JS/issues"
+  },
+  "homepage": "https://github.com/Kittaru87/bank-tech-test-JS#readme"
+}
