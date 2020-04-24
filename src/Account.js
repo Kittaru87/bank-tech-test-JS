@@ -1,7 +1,6 @@
 'use strict';
 
 function Account() {
-
   this._history = [];
   this.statement = new Statement(this._history)
 }

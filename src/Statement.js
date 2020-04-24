@@ -32,5 +32,3 @@ self.decimalFormat = function(number) {
 Statement.prototype.getBalance = function(){
   return this._balance;
 };
-
-

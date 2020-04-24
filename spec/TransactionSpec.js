@@ -11,7 +11,7 @@ describe ('Transaction', function(){
   it('defines a transaction class', function() {
     expect(transaction).toBeDefined();
   });
-  
+
   it('initializes with the current date', function(){
     var baseTime = new Date(2020, 4, 24);
     jasmine.clock().mockDate(baseTime);
