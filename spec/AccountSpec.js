@@ -26,6 +26,8 @@ describe ('Account', function(){
     expect(account.transactions().length).toEqual(1);
   });
 
- 
+  it('can print a summary', function(){
+    expect(account.summary()).toContain("date || credit || debit || balance\n");
+  });
 
 });

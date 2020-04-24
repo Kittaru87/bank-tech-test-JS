@@ -7,7 +7,7 @@ function Statement(history) {
 
 Statement.prototype.printStatement = function() {
   this._balance = 0;
-  return `date || credit || debit || balance\n${this.addStatement()}`;
+  return `date || credit || debit || balance\n`+`${this.addStatement()}`;
 };
 
 Statement.prototype.calculateBalance = function(credit, debit, balance) {
@@ -31,6 +31,6 @@ self.decimalFormat = function(number) {
 
 Statement.prototype.getBalance = function(){
   return this._balance;
-}
+};
 
 
