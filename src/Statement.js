@@ -3,7 +3,7 @@
 function Statement(history) {
   this._history = history;
   this._balance = 0;
-};
+}
 
 Statement.prototype.printStatement = function() {
   this._balance = 0;
@@ -15,7 +15,7 @@ Statement.prototype.calculateBalance = function(credit, debit, balance) {
     return this._balance = balance + credit;   
   } else if (debit > 0) {
     return this._balance = balance - debit;
-  };
+  }
 };
 
 Statement.prototype.addStatement = function(){
@@ -35,5 +35,9 @@ self.decimalFormat = function(number) {
   }
   return number = number.toFixed(2);
 };
+
+Statement.prototype.getBalance = function(){
+  return this._balance;
+}
 
 

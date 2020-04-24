@@ -17,6 +17,16 @@ describe ('Statement', function(){
   //   expect(statement.printStatement()).toBe("date || credit || debit || balance\n");
   // });
 
+  it('adds amount to the balance', function() {
+    statement.calculateBalance(50, 0, 0);
+    expect(statement.getBalance()).toBe(50);
+  })
+
+  it('removes amount from the balance', function() {
+    statement.calculateBalance(0, 50, 0);
+    expect(statement.getBalance()).toBe(-50);
+  })
+
   it('prints a statment', function() {
     expect(statement.printStatement()).toBe("date || credit || debit || balance\n25/04/2020 || 50.00 || || 50.00\n26/04/2020 || || 30.00 || 22.00\n")
   });

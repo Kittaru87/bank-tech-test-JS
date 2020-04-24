@@ -1,12 +1,10 @@
 'use strict';
 
 function Transaction(credit, debit) {
-
   this._credit = credit
   this._debit = debit
   this._date = self.getDate()
-
-};
+}
 
 self.getDate = function() {
   let date = new Date();
