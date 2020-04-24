@@ -3,7 +3,7 @@
 Makers Week 10 Individual Challenges
 
 
-[Specification](#Specification) | [Planning](#Planning) | [Installation instructions](#Installation-instructions) | [Running tests](#Running-tests) | [Further development](#Further-development) | [Tech stack](#Tech-stack)
+[Specification](#Specification) | [Planning](#Planning) | [Installation instructions](#Installation-instructions) | [Running tests](#Running-tests) | [Run-through](#Run-through) [Challenges](#challenges) | [Tech stack](#Tech-stack)
 
 ## Specification
 Write a program that can be used in the JavaScript console to simulate a user's interaction with their bank account.
@@ -51,7 +51,7 @@ I want to be able to see a printed statement of my withdrawals and deposits (new
 ```
 ### Model
 
-I am using the same model I used as my final development stage for the bank tech test in Ruby. I am interested to know if I can use the same structure in Javascript as I have done in Ruby.
+I am using the same model I used as my final development stage for the bank tech test in Ruby. I am interested to know if I can use the same structure in Javascript as I have done in Ruby and what the differences will be between the code.
 
 ![Bank Tech Test Model 2](./public/bank-tt-model-2.jpg)
 
@@ -67,8 +67,8 @@ I am using the same model I used as my final development stage for the bank tech
 * Open `SpecRunner.html` in your browser
 
 
-### console test
-![Consol test](./public/console-test.jpg)
+## Run-through
+![Console test](./public/console-test.jpg)
 
 ## Challenges
 * Figuring out how to format the date has been tricky. I initially used npm to install the node.js package 'dateformat' but had difficulties getting that to work properly. I have eventually settled for something I've constructed. It could probably do with being refactored.
