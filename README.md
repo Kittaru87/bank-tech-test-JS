@@ -53,7 +53,7 @@ I want to be able to see a printed statement of my withdrawals and deposits (new
 
 I am using the same model I used as my final development stage for the bank tech test in Ruby. I am interested to know if I can use the same structure in Javascript as I have done in Ruby and what the differences will be between the code.
 
-![Bank Tech Test Model 2](./Bank-TT-JS/public/bank-tt-model-2.jpg)
+![Bank Tech Test Model 2](./Public/bank-tt-model-2.jpg)
 
 
 ## Installation instructions
@@ -68,7 +68,7 @@ I am using the same model I used as my final development stage for the bank tech
 
 
 ## Run-through
-![Console test](./Bank-TT-JS/public/console-test.png)
+![Console test](./Public/console-test.png)
 
 ## Challenges
 * Figuring out how to format the date has been tricky. I initially used npm to install the node.js package 'dateformat' but had difficulties getting that to work properly. I have eventually settled for something I've constructed. It could probably do with being refactored.
