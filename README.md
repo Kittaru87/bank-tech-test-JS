@@ -1,4 +1,4 @@
-# Bank Tech Test 
+# Bank Tech Test - JavaScript
 
 Makers Week 10 Individual Challenges
 

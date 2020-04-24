@@ -11,11 +11,7 @@ Statement.prototype.printStatement = function() {
 };
 
 Statement.prototype.calculateBalance = function(credit, debit, balance) {
-  if (credit > 0) {
-    return this._balance = balance + credit;   
-  } else if (debit > 0) {
-    return this._balance = balance - debit;
-  }
+  return (credit > 0) ? this._balance = balance + credit : this._balance = balance - debit  
 };
 
 Statement.prototype.addStatement = function(){
@@ -30,10 +26,7 @@ Statement.prototype.addStatement = function(){
 };
 
 self.decimalFormat = function(number) {
-  if (number === 0) {
-    return number = "";
-  }
-  return number = number.toFixed(2);
+ return (number === 0) ? number = "" : number = number.toFixed(2)
 };
 
 Statement.prototype.getBalance = function(){
