@@ -1,15 +1,17 @@
+'use strict';
 
-function Transaction() {
+function Transaction(credit, debit) {
 
-  this._credit = 0
-  this._debit = 0
-
+  this._credit = credit
+  this._debit = debit
+  this._date = self.getDate()
 
 };
 
-Transaction.prototype.formatDate = function(){
-  var dateFormat = require('dateformat');
-  var now = new Date();
-  dateFormat(now, "dd/mm/yy")
+self.getDate = function() {
+  let date = new Date();
+  let day = date.getDate()
+  let month = date.getMonth()
+  let year = date.getFullYear()
+  return `${day}/${month}/${year}`
 };
-

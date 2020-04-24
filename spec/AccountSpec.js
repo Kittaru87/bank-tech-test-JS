@@ -16,4 +16,14 @@ describe ('Account', function(){
     expect(account.transactions()).toEqual([]);
   });
 
+  it('can deposit money by adding a transaction to the history array', function(){
+    account.deposit(50.00)
+    expect(account.transactions().length).toEqual(1);
+  });
+
+  it('can withdraw money by adding a transaction to the history array', function(){
+    account.withdraw(50.00)
+    expect(account.transactions().length).toEqual(1);
+  });
+
 });

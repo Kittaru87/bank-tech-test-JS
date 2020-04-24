@@ -51,6 +51,9 @@ I want to be able to see a printed statement of my withdrawals and deposits (new
 ```
 ### Model
 
+I am using the same model I used as my final development stage for the bank tech test in Ruby. I am interested to know if I can use the same structure in Javascript as I have done in Ruby.
+
+![Bank Tech Test Model 2](./public/bank-tt-model-2.jpg)
 
 
 ## Installation instructions
@@ -61,22 +64,15 @@ I want to be able to see a printed statement of my withdrawals and deposits (new
 
 
 ## Running tests
-
+* Open `SpecRunner.html` in your browser
 
 
 ### console test
-```
+![Consol test](./public/console-test.jpg)
 
-```
-
-## Further development
-
-
-
-### Updated model
-
-![Bank Tech Test Model 2](./public/bank-tt-model-2.jpg)
-
+## Challenges
+* Figuring out how to format the date has been tricky. I initially used npm to install the node.js package 'dateformat' but had difficulties getting that to work properly. I have eventually settled for something I've constructed. It could probably do with being refactored.
+* Trickier to work out how to reset the balance back to 0 once the statement has been printed than in Ruby. Decided to keep an initialized balance of 0 in the Statement class that reverts back to 0 once the printStatement method has been called.
 
 
 ## Tech stack
