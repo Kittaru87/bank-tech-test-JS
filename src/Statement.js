@@ -20,13 +20,13 @@ Statement.prototype.addStatement = function(){
     let credit = transaction._credit;
     let debit = transaction._debit;
     let current_balance = this.calculateBalance(credit, debit, this._balance)
-    return `${date} || ${this.decimalFormat(credit)} || ${this.decimalFormat(debit)} || ${this.decimalFormat(current_balance)}\n`;
+    return `${date} || ${self.decimalFormat(credit)} || ${self.decimalFormat(debit)} || ${self.decimalFormat(current_balance)}\n`;
   });
   return reversedHistory.reverse().join("");
 };
 
-Statement.prototype.decimalFormat = function(number) {
- return (number === 0) ? number = "" : number = parseInt(number).toFixed(2);
+self.decimalFormat = function(number) {
+ return (number === 0) ? number = "" : number = number.toFixed(2);
 };
 
 Statement.prototype.getBalance = function(){
